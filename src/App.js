@@ -4,12 +4,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import CantidadPokemon from './comṕonents/CantidadPokemon';
 import ComprarPokemon from './comṕonents/ComprarPokemon';
+import store from './redux/store';
 
 function App() {
+    console.log(store.getState());
     return ( 
     <div className = "App container">
         <div className='row'>
-            <dv className='col-12'>
+            <div className='col-12'>
 
                 <div className='card mt-5' style={{maxWidth: '370px'}}>
                     <div className='row no-gutters'>
@@ -29,7 +31,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-            </dv>
+            </div>
         </div>
     </div>
     );
