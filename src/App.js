@@ -8,6 +8,8 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import CantidadPokemonHook from './comṕonents/CantidadPokemons.hook';
 import ComprarPokemonHook from './comṕonents/ComprarPokemon.hook';
+import BuscadorPokemon from './comṕonents/buscador/BuscadorPokemon';
+import ResultadoPokemon from './comṕonents/buscador/ResultadoPokemon';
 
 function App() {
     return ( 
@@ -33,6 +35,12 @@ function App() {
                         </div>
                     </div>
                 </div>
+            <div className='col-12 mt-4 border-top pt-3'>
+                <BuscadorPokemon />
+            </div>
+            <div className='col-12'>
+                <ResultadoPokemon />
+            </div>
             </div>
         </div>
     </Provider>
