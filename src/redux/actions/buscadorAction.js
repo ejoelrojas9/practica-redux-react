@@ -30,7 +30,7 @@ export const fethPokemonFailure = (error) => {
 //Estas tres acciones van envuelta e una gran accion que ira cambiando internamente 
 
 const fetchPokemon = (valor) => { //Exportamos la función
-    return (dispatch) = => { //Función que devuelve otra función que gracias a Thunk envia el dispatch
+    return (dispatch) => { //Función que devuelve otra función que gracias a Thunk envia el dispatch
         dispatch(fetchPokemonRequest()); //Primera acción habilitando que se esta haciendo request
         axios.get(`https://pokeapi.co/api/v2/pokemon/${valor}`) //Se llama a axios.get Direción de la API en este caso la de Pokemon
             .then(response => {
